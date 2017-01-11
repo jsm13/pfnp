@@ -1,0 +1,31 @@
+* What's a program (20 min)
+  a program is a set of instructions to be executed at some later time and place. Programming is the process of developing such a procedure.
+** Composition & Abstraction
+   our primary tools in writing programs are composition and abstraction. Composition is the process of combining simple parts to build something more complex. Abstraction is giving a name to an idea in a way that we don't have to worry about the details.
+** The Function
+   our primary means of this is the Function. Functions are awesome.
+* Web Development (40 min)
+** The Server and the Client
+   when you go to a website, there are (simplified for conceptual perposes) two machines in play: the server and the client.
+*** The Server
+    the server is a computer optimized to send and receive requests for information [picture of server]
+*** The Client
+    the client is the users computer, our computer when we browse the web
+*** The Relationship
+    when we browse the internet, 
+    1. we type a URL and our browser makes an HTTP request (sends a special message) to an address associated with that addressd
+    2. when the server receives the request, it processes it and responds with information
+    3. this information is then processed by the browser and the website runs on our machine
+** A Super Brief History
+*** Web 1.0: linked documents
+    think wiki. Pretty simple, primarily text with some media. Server rendered pages
+*** Web 2.0: web apps
+    think google maps. Rich applications similar to what we previously ran by buying CDs and installing on our machines
+**** micro-services
+*** Web 3.0: IoT
+    Nest, Hue, etc.
+* Examples (40 min)
+** Static site (20 min)
+   Just html, css, and js opened locally (code along in online IDE)
+** Server Rendered
+Using node / express backend (discuss other languages and highlight)
