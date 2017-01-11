@@ -3,7 +3,7 @@
 ** Composition & Abstraction
    our primary tools in writing programs are composition and abstraction. Composition is the process of combining simple parts to build something more complex. Abstraction is giving a name to an idea in a way that we don't have to worry about the details.
 ** The Function
-   our primary means of this is the Function. Functions are awesome.
+   our primary means of this is the Function. Functions are super cool.
 * Web Development (40 min)
 ** The Server and the Client
    when you go to a website, there are (simplified for conceptual perposes) two machines in play: the server and the client.
@@ -25,7 +25,55 @@
 *** Web 3.0: IoT
     Nest, Hue, etc.
 * Examples (40 min)
-** Static site (20 min)
+** Static site
    Just html, css, and js opened locally (code along in online IDE)
-** Server Rendered
-Using node / express backend (discuss other languages and highlight)
+** Server Rendered and Persistence
+   Using node / express backend (discuss other languages and highlight server / client difference)
+** Web App with AJAX
+   Use a timeout to demonstrate server latency and compare with full page reloads
+** Libraries, Frameworks, and Third Party APIs (oh my!)
+   React, Weather underground
+* Tools (40 min)
+** git / GitHub
+   learn it and you will be powerful! https://www.atlassian.com/git/ (skip learn Git in far left column)
+** Google
+   your best friend in development. You are almost never doing something for the first time -- if you are you either haven't broken it down enough, are doing something impossible / inadvisable, or you're about to change the world (slim shot)
+** IDE (integrated development environment) / Text Editor
+   code is just text! This is where you write that text
+** Build Tools
+   as soon as you begin building non-trivial apps, the number of bits to manage quickly becomes staggering -- build tools to save the day!
+** Your Machine
+   code runs on machines, you write code on machines, run the code as you are writing it! Tons of tools to make this easier / more powerful
+** Your Brain
+   programming takes a lot of thinking but it should be fun like a puzzle or building legos (thought legos that is)!
+** Your Community
+   despite popular conception, rarely do we code solo and even more rarely should we -- it is at best boring and at worst counter productive
+** Resources
+   see below
+* Resources for Learning (40 min)
+** Eloquent JavaScript
+   if you study this book diligently, I believe you could not only get a job in development but would quickly be an expert at work
+** General Assembly
+   you're here! Congratulations! There's more if you're liking it so far (and if you're not that's probably my fault and there's a lot taught by other people, too so check them out but also tell me what I can do better)
+** MeetUps
+   there are great MeetUps for all kinds of tech things -- great way to meet people active in the community
+** Free Tutorials
+   Most major technologies have official tutorials (Rails tutorials are some of the best -- talk about why not discussing ruby today)
+** Paid Tutorials
+   CodeSchool, PluralSight, Udemy, Coursera, etc.
+** Books
+   No Starch Press, O'Riely Press
+** Exercise
+   Project Euler, Code Katas, etc
+** Do It
+   Make something! Programming is more art than science and "art begins in imitation". Do something that interests you and your enthusiasm will be an asset
+* Q&A / Free code / John on a Soapbox (90 min)
+** We write code to be read by people
+   There are literally infinite ways to write code that will run and produce the right answer -- writing code that the next person intuitively understands is an art
+** This is not a field for those afraid of change
+   This is a constantly and rapidly changing world -- not only must you not fear change but you must be excited to embrace it
+** Development is a group activity
+   Play nicely! This is hard, the unknown and change are scary, and egos are delicate -- we can make this fun by treating others the way we'd like to be treated
+** The Internet as the printing press
+   Johannes Gutenberg invented the printing press in 1440, Tim Berners-Lee invented the World Wide Web in 1990. We don't have much better sense of how this will change the world than people the mid-15th century anticipated the effects of the printing press
+** This is the new normal (thank goodness it's awesome!)
