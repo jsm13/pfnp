@@ -1,7 +1,40 @@
 * What's a program (20 min)
   a program is a set of instructions to be executed at some later time and place. Programming is the process of developing such a procedure.
+
+  these instuctons all regard data in memory -- reading, writing, and manipulating that data. Slightly mindbendingly (or not, if it makes sense to you, don't over think it at my suggestion) these instructions themselves are data in memory.
+
+  in "low-level" languages, instructions are written directly regarding this memory. We are fortunate to learn in a time of immensely powerful "high-level" languages in which we worry about logical constructs and the book-keeping of memory management is handled for us.
+
+  while we don't need to worry about the tedious and error prone task of managing memory, it is always important to keep in mind what is going on under the hood as we write programs. It is impossible for us to understand the exact specifics of all that we do but it is very important to remember that there is no (at least not much) voodoo powering computers. At risk of distraction from the task at hand and to the extend it minimizes the feeling of mysticism, we do right by ourselves to explore.
+** Statements and Expressions
+   in javascript, our two fundemental units of speech are the statement and the expression. A statement is an instruction to "do something" while an expression is an instruction to "evaluate something". This is a bit abstract so let's explore an example.
+
+   #+BEGIN_SRC javascript
+   var myFirstVariable;
+   #+END_SRC
+
+   this fantastically unexciting statement is packed with important ideas! This is called a variable declaration. We are telling the runtime environment, "hey, runtime environment, I'm going to start talking about this thing 'myFirstVariable', so heads up." Just like in algebra, a variable represents a value. We have not yet assigned a value to "myFirstVariable" so if we ask our environment about it, we will see that it is ~undefined~ 
+
+   let's assign a value to ~myFirstVariable~
+
+   #+BEGIN_SRC javascript
+   myFirstVariable = 42
+   #+END_SRC
+
+   frequently these two instuctons are combined into one which looks like
+
+   #+BEGIN_SRC javascript
+   var myFirstVariable = 42;
+   #+END_SRC
+   
+   an expression on it's own is a valid statement but a statement is a special form which cannot be used as an expression
+
+*** Semicolons
+    semicolons can be thought of like a period - it goes at the end of a statement to express the completion of the statement. Frequently the presence of the semicolon has no effect on the code (one is implicitly inserted by the runtime) but depending on this explicit insertion can cause aggrivating problems in edge cases and hurts code clarity
 ** Composition & Abstraction
    our primary tools in writing programs are composition and abstraction. Composition is the process of combining simple parts to build something more complex. Abstraction is giving a name to an idea in a way that we don't have to worry about the details.
+*** Composition
+    just like legos, using a few generic pieces, by putting together generic pieces, we can build something unique and specialized. 
 ** The Function
    our primary means of this is the Function. Functions are super cool.
 * Web Development (40 min)
