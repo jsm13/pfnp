@@ -266,7 +266,7 @@
    you're here! Congratulations! There's more if you're liking it so far (and if you're not that's probably my fault and there's a lot taught by other people, too so check them out but also tell me what I can do better)
 
    As many resources as there are for learning every aspect of web development, one of the most important aspects is some degree of community and mentorship. This is difficult and having people to learn with and learn from is invaluable
-** Eloquent JavaScript
+** [[http://eloquentjavascript.net/][Eloquent JavaScript]]
    if you study this book diligently, I believe you could not only get a job in development but would quickly be an expert at work
 ** MeetUps
    there are great MeetUps for all kinds of tech things -- great way to meet people active in the community
