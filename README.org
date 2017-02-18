@@ -271,6 +271,9 @@
    you're here! Congratulations! There's more if you're liking it so far (and if you're not that's probably my fault and there's a lot taught by other people, too so check them out but also tell me what I can do better)
 
    As many resources as there are for learning every aspect of web development, one of the most important aspects is some degree of community and mentorship. This is difficult and having people to learn with and learn from is invaluable
+
+   Check out [[https://dash.generalassemb.ly/][Dash]] for online learning
+
 ** [[http://eloquentjavascript.net/][Eloquent JavaScript]]
    if you study this book diligently, I believe you could not only get a job in development but would quickly be an expert at work
 ** MeetUps
@@ -278,7 +281,7 @@
 ** Free Tutorials
    Most major technologies have official tutorials (Rails tutorials are some of the best -- talk about why not discussing ruby today)
 ** Paid Tutorials
-   [[http://eloquentjavascript.net/][CodeSchool]], [[https://www.pluralsight.com/][PluralSight]], Udemy, Coursera, etc.
+   [[https://www.codeschool.com/][CodeSchool]], [[https://www.pluralsight.com/][PluralSight]], Udemy, Coursera, etc.
 ** Books
    No Starch Press, O'Riely Press
 ** Do It
