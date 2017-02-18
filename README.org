@@ -118,17 +118,56 @@
      Frequently, we will want to run certain code only is some condition is met. _Conditional Statements_ allow us to do this
 
 ***** Conditional
+      A conditional statement begins with the keyword =if= followed by an expression thats truthy / falsyness determines if the block will be run.
+
+      The block can be followed by an ~else~ keyword which then is followed by a second block to be run when the condition for the ~if~ is not met
+
       #+BEGIN_SRC javascript
-    var age = 19,
+      var age = 19,
       response;
-    
-    if (age < 21) {
-      response = "Sorry, 21 and over";
-    } else {
-      response = "Thanks, have a good time";
-    }
-    
-    console.log(response);
+      
+      if (age < 21) {
+        response = "Sorry, 21 and over";
+      } else {
+        response = "Thanks, have a good time";
+      }
+      
+      console.log(response);
+      #+END_SRC
+
+      The else block is not required and will cause no problem if omitted.
+
+      There is also a [[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch][switch statement]] that will check the provided expression against cases and run the blocks that match but it has some oddieties and chained ~if ... else ... ~ statements are more flexible and usually prefered
+
+      Other flow control statements regard exception creation and handling which we will not cover today
+
+***** Looping
+      Sometimes we want to do something for as long as a condition is met. The fundamental tool for doing this is the ~while~ statement
+
+      #+BEGIN_SRC javascript
+      var counter = 10;
+      while (counter >= 0){
+        console.log("count: ", counter);
+        counter = counter - 1;
+      }
+      #+END_SRC
+
+      The above while loop has a common pattern of setting a counter (initialization), checking the counter (condition), and updating the counter (final-expression)
+
+      To do this in a more concise way, we use a for loop. The same code above can be expressed as:
+
+      #+BEGIN_SRC javascript
+      for (var counter = 10; counter >= 0; counter = counter - 1){
+        console.log(counter);
+      }
+      #+END_SRC
+
+      we can make a couple of changes that make this more concise; they don't effect the loop at all but are frequently seen in that context
+
+      #+BEGIN_SRC javascript
+      for (var i = 10; i >= 0; i--){
+        console.log(i);
+      }
       #+END_SRC
 
 *** Composition & Abstraction
