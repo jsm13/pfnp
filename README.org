@@ -1,4 +1,4 @@
-* What's a program (20 min)
+* What's a program (30 min)
   A program is the way that we instruct a computer to do some work for us using a language.
 
   This is as opposed to the most prevalent way of issuing commands to a computer by way of a Graphical User Interface (GUI)
@@ -21,7 +21,7 @@
 
   At risk of distraction from the task at hand and to the extent it minimizes the feeling of mysticism, we do right by ourselves to explore.
 
-** JavaScript (60 min)
+** JavaScript (90 min)
    The high-level language we will explore today is called JavaScript. The name is the unfortunate consequence of a marketing decision; JavaScript has no more to do with Java than it does any other programming language
 
    You may also see JavaScript refered to as ECMAScript, a refference to the organization which maintains the language standard, the European Computer Manufacturers Association
@@ -176,9 +176,12 @@
      just like legos, using a few generic pieces, by putting together generic pieces, we can build something unique and specialized.
 *** The Function
     our primary means of this is the Function. Functions are super cool.
-* Web Development (40 min)
+* Web Development Overview (30 min)
 ** The Server and the Client
    when you go to a website, there are (simplified for conceptual perposes) two machines in play: the server and the client.
+
+   [[./Client-Server_Model.jpg]]
+
 *** The Server
     the server is a computer optimized to send and receive requests for information [picture of server]
 *** The Client
@@ -196,7 +199,10 @@
 **** micro-services
 *** Web 3.0: IoT
     Nest, Hue, etc.
-* Examples (40 min)
+
+* Lunch (30 min)
+
+* Examples (20 min)
 ** Static site
    Just html, css, and js opened locally (code along in online IDE)
 ** Server Rendered and Persistence
@@ -223,7 +229,7 @@
    despite popular conception, rarely do we code solo and even more rarely should we -- it is at best boring and at worst counter productive
 ** Resources
    see below
-* Resources for Learning (40 min)
+* Resources for Learning (20 min)
 ** Eloquent JavaScript
    if you study this book diligently, I believe you could not only get a job in development but would quickly be an expert at work
 ** General Assembly
