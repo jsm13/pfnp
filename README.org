@@ -210,6 +210,11 @@
 
 * Lunch (30 min)
 
+* Exercises
+  - Code Abbey (http://www.codeabbey.com/)
+  - Simple Programming Problems Repo (https://adriann.github.io/programming_problems.html)
+  - Ubuntu Forum Challenges (https://ubuntuforums.org/showthread.php?t=876494)
+  - Project Euler (https://projecteuler.net/)
 * Web Development Overview (30 min)
 ** The Server and the Client
    when you go to a website, there are (simplified for conceptual perposes) two machines in play: the server and the client.
@@ -273,19 +278,12 @@
 ** Free Tutorials
    Most major technologies have official tutorials (Rails tutorials are some of the best -- talk about why not discussing ruby today)
 ** Paid Tutorials
-   CodeSchool, PluralSight, Udemy, Coursera, etc.
+   [[http://eloquentjavascript.net/][CodeSchool]], [[https://www.pluralsight.com/][PluralSight]], Udemy, Coursera, etc.
 ** Books
    No Starch Press, O'Riely Press
-** Exercise
-   Project Euler, Code Katas, etc
 ** Do It
    Make something! Programming is more art than science and art begins in imitation. Do something that interests you and your enthusiasm will be an asset
 * Q&A / Free code / John on a Soapbox (90 min)
-** Exercises
-   - Code Abbey (http://www.codeabbey.com/)
-   - Simple Programming Problems Repo (https://adriann.github.io/programming_problems.html)
-   - Ubuntu Forum Challenges (https://ubuntuforums.org/showthread.php?t=876494)
-   - Project Euler (https://projecteuler.net/)
 ** We write code to be read by people
    There are literally infinite ways to write code that will run and produce the right answer -- writing code that the next person intuitively understands is an art
 ** This is not a field for those afraid of change
