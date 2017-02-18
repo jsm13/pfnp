@@ -175,7 +175,31 @@
 **** Composition
      just like legos, using a few generic pieces, by putting together generic pieces, we can build something unique and specialized.
 *** The Function
-    our primary means of this is the Function. Functions are super cool.
+    our primary means of this is the Function. Functions are super cool. They let us package up our code for re-use, think about code in an isolated way and much more
+
+    Earlier we used a conditional to express some logic for checking IDs at a bar. We can package up that logic into a function
+
+    #+BEGIN_SRC javascript
+
+    function bounce(age){
+      if (age >= 21) {
+        return "Have fun";
+      } else {
+        return "Sorry, kid";
+      }
+    }
+
+    #+END_SRC
+
+    and now we can invoke our function repeatedly:
+
+    #+begin_src javascript
+    var age = 96;
+    var response = bounce(age);
+    console.log(response);
+    // we don't need to involve variables at all!
+    console.log(bounce(17)); 
+    #+end_src
 * Web Development Overview (30 min)
 ** The Server and the Client
    when you go to a website, there are (simplified for conceptual perposes) two machines in play: the server and the client.
@@ -205,14 +229,14 @@
 * Examples (20 min)
 ** Static site
    Just html, css, and js opened locally (code along in online IDE)
-** Server Rendered and Persistence
+** Server Rendered Sites, Services, and Persistence
    Using node / express backend (discuss other languages and highlight server / client difference)
-*** [[https://github.com/expressjs/express/blob/master/examples/web-service/index.js][Simple Express example]]
-** Web App with AJAX
-   Use a timeout to demonstrate server latency and compare with full page reloads
-** Libraries, Frameworks, and Third Party APIs (oh my!)
+*** [[https://github.com/expressjs/express/blob/master/examples/][Simple Express examples]]
+** Libraries, Frameworks, and Third Party APIs
    React, Weather underground
-* Tools (40 min)
+* Tools (20 min)
+** Node & NPM
+   Node is a runtime for JS on the server side; NPM is a package management tool that comes bundled with Node
 ** git / GitHub
    learn it and you will be powerful! https://www.atlassian.com/git/ (skip learn Git in far left column)
 ** Google
@@ -247,6 +271,11 @@
 ** Do It
    Make something! Programming is more art than science and art begins in imitation. Do something that interests you and your enthusiasm will be an asset
 * Q&A / Free code / John on a Soapbox (90 min)
+** Exercises
+   - Code Abbey (http://www.codeabbey.com/)
+   - Simple Programming Problems Repo (https://adriann.github.io/programming_problems.html)
+   - Ubuntu Forum Challenges (https://ubuntuforums.org/showthread.php?t=876494)
+   - Project Euler (https://projecteuler.net/)
 ** We write code to be read by people
    There are literally infinite ways to write code that will run and produce the right answer -- writing code that the next person intuitively understands is an art
 ** This is not a field for those afraid of change
@@ -255,4 +284,3 @@
    Play nicely! This is hard, the unknown and change are scary, and egos are delicate -- we can make this fun by treating others the way we'd like to be treated
 ** The Internet as the printing press
    Johannes Gutenberg invented the printing press in 1440, Tim Berners-Lee invented the World Wide Web in 1990. We don't have much better sense of how this will change the world than people the mid-15th century anticipated the effects of the printing press
-** This is the new normal (thank goodness it's awesome!)
