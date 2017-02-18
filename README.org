@@ -281,7 +281,7 @@
 ** Free Tutorials
    Most major technologies have official tutorials (Rails tutorials are some of the best -- talk about why not discussing ruby today)
 ** Paid Tutorials
-   [[https://www.codeschool.com/][CodeSchool]], [[https://www.pluralsight.com/][PluralSight]], Udemy, Coursera, etc.
+   [[https://www.codeschool.com/][CodeSchool]], [[https://www.pluralsight.com/][PluralSight]], [[http://teamtreehouse.com][treehouse]], Udemy, Coursera, etc.
 ** Books
    No Starch Press, O'Riely Press
 ** Do It
