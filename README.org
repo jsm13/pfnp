@@ -174,6 +174,12 @@
     our primary tools in writing programs are composition and abstraction. Composition is the process of combining simple parts to build something more complex. Abstraction is giving a name to an idea in a way that we don't have to worry about the details.
 **** Composition
      just like legos, using a few generic pieces, by putting together generic pieces, we can build something unique and specialized.
+
+*** Collections
+    Frequently we need to collect primitive values into groups. We have two primary ways of doing _arrays_ are collections where we access by postion. Objects (called dictionaries in other languages) are accessed by value
+    - [[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array][Arrays]]
+    - [[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object][Objects]]
+
 *** The Function
     our primary means of this is the Function. Functions are super cool. They let us package up our code for re-use, think about code in an isolated way and much more
 
@@ -200,6 +206,10 @@
     // we don't need to involve variables at all!
     console.log(bounce(17)); 
     #+end_src
+
+
+* Lunch (30 min)
+
 * Web Development Overview (30 min)
 ** The Server and the Client
    when you go to a website, there are (simplified for conceptual perposes) two machines in play: the server and the client.
@@ -223,8 +233,6 @@
 **** micro-services
 *** Web 3.0: IoT
     Nest, Hue, etc.
-
-* Lunch (30 min)
 
 * Examples (20 min)
 ** Static site
@@ -254,10 +262,12 @@
 ** Resources
    see below
 * Resources for Learning (20 min)
-** Eloquent JavaScript
-   if you study this book diligently, I believe you could not only get a job in development but would quickly be an expert at work
 ** General Assembly
    you're here! Congratulations! There's more if you're liking it so far (and if you're not that's probably my fault and there's a lot taught by other people, too so check them out but also tell me what I can do better)
+
+   As many resources as there are for learning every aspect of web development, one of the most important aspects is some degree of community and mentorship. This is difficult and having people to learn with and learn from is invaluable
+** Eloquent JavaScript
+   if you study this book diligently, I believe you could not only get a job in development but would quickly be an expert at work
 ** MeetUps
    there are great MeetUps for all kinds of tech things -- great way to meet people active in the community
 ** Free Tutorials
