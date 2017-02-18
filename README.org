@@ -21,7 +21,7 @@
 
   At risk of distraction from the task at hand and to the extent it minimizes the feeling of mysticism, we do right by ourselves to explore.
 
-** JavaScript
+** JavaScript (60 min)
    The high-level language we will explore today is called JavaScript. The name is the unfortunate consequence of a marketing decision; JavaScript has no more to do with Java than it does any other programming language
 
    You may also see JavaScript refered to as ECMAScript, a refference to the organization which maintains the language standard, the European Computer Manufacturers Association
@@ -79,7 +79,7 @@
 
      - Nothing: ~undefined~ & ~null~
      - Booleans: ~true~ & ~false~
-     - Strings: ~'Hello world!'~, ~"A"~, '42', etc.
+     - Strings: ~"Hello world!"~, ~"A"~, ~"42"~, etc.
      - Numbers: ~1~, ~999~, ~7.35~, ~10e4~, etc.
 
 **** Operators
@@ -112,7 +112,24 @@
 *** More on Statements
     We have already touched upon and will return later to _declaration statements_; these inform the runtime of variables we would like to associate values with so that we can refer to them later
 
-The next type 
+    The next type we will discuss, flow control statements, will instruct the runtime of the order in which statements should run. Without flow control, a program will run, inuitively, from top to bottom
+
+**** Flow Control
+     Frequently, we will want to run certain code only is some condition is met. _Conditional Statements_ allow us to do this
+
+***** Conditional
+      #+BEGIN_SRC javascript
+    var age = 19,
+      response;
+    
+    if (age < 21) {
+      response = "Sorry, 21 and over";
+    } else {
+      response = "Thanks, have a good time";
+    }
+    
+    console.log(response);
+      #+END_SRC
 
 *** Composition & Abstraction
     our primary tools in writing programs are composition and abstraction. Composition is the process of combining simple parts to build something more complex. Abstraction is giving a name to an idea in a way that we don't have to worry about the details.
