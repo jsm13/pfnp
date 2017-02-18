@@ -1,42 +1,125 @@
 * What's a program (20 min)
-  a program is a set of instructions to be executed at some later time and place. Programming is the process of developing such a procedure.
+  A program is the way that we instruct a computer to do some work for us using a language.
 
-  these instuctons all regard data in memory -- reading, writing, and manipulating that data. Slightly mindbendingly (or not, if it makes sense to you, don't over think it at my suggestion) these instructions themselves are data in memory.
+  This is as opposed to the most prevalent way of issuing commands to a computer by way of a Graphical User Interface (GUI)
 
-  in "low-level" languages, instructions are written directly regarding this memory. We are fortunate to learn in a time of immensely powerful "high-level" languages in which we worry about logical constructs and the book-keeping of memory management is handled for us.
+  Programming is the process of developing such a procedure in some programming language.
 
-  while we don't need to worry about the tedious and error prone task of managing memory, it is always important to keep in mind what is going on under the hood as we write programs. It is impossible for us to understand the exact specifics of all that we do but it is very important to remember that there is no (at least not much) voodoo powering computers. At risk of distraction from the task at hand and to the extend it minimizes the feeling of mysticism, we do right by ourselves to explore.
-** Statements and Expressions
-   in javascript, our two fundemental units of speech are the statement and the expression. A statement is an instruction to "do something" while an expression is an instruction to "evaluate something". This is a bit abstract so let's explore an example.
+  These instuctons all regard data in memory -- reading, writing, and manipulating that data. Slightly mindbendingly (or not, if it makes sense to you, don't over think it at my suggestion) these instructions themselves are data in memory.
 
-   #+BEGIN_SRC javascript
-   var myFirstVariable;
-   #+END_SRC
+  In the form the instructions are interpreted by the machine, the manipulations are all relatively simple operations (load, jump, and perform an arithmetic or logical function) and are performed extremely quickly.
 
-   this fantastically unexciting statement is packed with important ideas! This is called a variable declaration. We are telling the runtime environment, "hey, runtime environment, I'm going to start talking about this thing 'myFirstVariable', so heads up." Just like in algebra, a variable represents a value. We have not yet assigned a value to "myFirstVariable" so if we ask our environment about it, we will see that it is ~undefined~ 
+  These instructions are called machine code and like all data, are stored in the machine as binary -- while it takes more charaters to express data in binary than any other encoding, all data can be represented in binary charaters (bits) and again, computers are very fast at simple things like reading.
 
-   let's assign a value to ~myFirstVariable~
+  People however, are not very fast at reading binary and even when these instructions are translated from binary to something human readable, an individual instruction makes more sense but the programs composed of these instructions are very difficult for humans to read or write.
 
-   #+BEGIN_SRC javascript
-   myFirstVariable = 42
-   #+END_SRC
+  In "low-level" languages, instructions are written directly regarding this memory.
 
-   frequently these two instuctons are combined into one which looks like
+  We are fortunate to learn in a time of immensely powerful "high-level" languages when we can worry about logical constructs rather than the basic opperations of the processor, and the book-keeping of memory management is handled for us.
 
-   #+BEGIN_SRC javascript
-   var myFirstVariable = 42;
-   #+END_SRC
+  While we don't need to worry about the tedious and error prone task of managing memory or being restricted to the CPUs pallet of opperations, it is always important to keep in mind what is going on under the hood as we write programs. It is impossible for us to understand the exact specifics of all that we do but it is very important to remember that there is no (at least not much) voodoo powering computers.
+
+  At risk of distraction from the task at hand and to the extent it minimizes the feeling of mysticism, we do right by ourselves to explore.
+
+** JavaScript
+   The high-level language we will explore today is called JavaScript. The name is the unfortunate consequence of a marketing decision; JavaScript has no more to do with Java than it does any other programming language
+
+   You may also see JavaScript refered to as ECMAScript, a refference to the organization which maintains the language standard, the European Computer Manufacturers Association
+
+   We write code as plain text in files more simple than word documents -- you can write runnable code in a simple text editor (textEdit on a mac, Notepad on a PC) but these won’t give you a lot of the bells and whistles that are especially helpful in writing code
+
+   Today we will use an online IDE (integrated development environment) called [[https://jsbin.com/?js,console][JSBin]] to explore JavaScript
+
+   We're going to come back to a lot of "why" about programming languages and JS specifically shortly, but we'll talk about "how" to get up and going first
+
+*** Statements and Expressions
+    in javascript, our two fundemental units of speech are the statement and the expression. A statement is an instruction to the runtime to "do something" while an expression is something to be evaluated. This is a bit abstract so let's explore an example.
+
+    #+BEGIN_SRC javascript
+    var myFirstVariable;
+    #+END_SRC
+
+    this fantastically unexciting statement is packed with important ideas! This is called a variable declaration. We are saying, "hey, runtime environment, I'm going to start talking about this thing 'myFirstVariable', so heads up." Just like in algebra, a variable represents a value. We have not yet assigned a value to "myFirstVariable" so if we ask our environment about it, we will see that it is ~undefined~ 
+
+    #+BEGIN_SRC javascript
+    console.log(myFirstVariable);
+    #+END_SRC
+
+    NOTE: producing output is actually the programming doing something; without an explicit log statement, code will be executed silently
+
+    let's assign a value to ~myFirstVariable~
+
+    #+BEGIN_SRC javascript
+    myFirstVariable = 42
+    #+END_SRC
+
+    An assignment is really a type of expression; don't worry about this, the important take away is that it returns a value (the value being assigned, ie 42)
+
+    Frequently these instuctons are combined into one which looks like
+
+    #+BEGIN_SRC javascript
+    var myFirstVariable = 42;
+    #+END_SRC
    
-   an expression on it's own is a valid statement but a statement is a special form which cannot be used as an expression
+    an expression on it's own is a valid statement but a statement is a special form which cannot be used as an expression
 
-*** Semicolons
-    semicolons can be thought of like a period - it goes at the end of a statement to express the completion of the statement. Frequently the presence of the semicolon has no effect on the code (one is implicitly inserted by the runtime) but depending on this explicit insertion can cause aggrivating problems in edge cases and hurts code clarity
-** Composition & Abstraction
-   our primary tools in writing programs are composition and abstraction. Composition is the process of combining simple parts to build something more complex. Abstraction is giving a name to an idea in a way that we don't have to worry about the details.
-*** Composition
-    just like legos, using a few generic pieces, by putting together generic pieces, we can build something unique and specialized. 
-** The Function
-   our primary means of this is the Function. Functions are super cool.
+**** Semicolons
+     Semicolons can be thought of like a period - it goes at the end of a statement to express the completion of the statement. Frequently the presence of the semicolon has no effect on the code (one is implicitly inserted by the runtime) but depending on this feature can cause aggrivating problems in edge cases and hurts code clarity
+
+*** Expressions in Depth
+
+    Expressions is composed of primitive values, collections, operators, and functions
+
+**** Primitive Vales
+     The most basic units we interact with in JavaScript are primitive values
+
+     Primitive values are written literally and represent themselves; this should be clear as we get into examples.
+
+     There are just 5 types of primitive values (the first two of which we’ll consider together):
+
+     - Nothing: ~undefined~ & ~null~
+     - Booleans: ~true~ & ~false~
+     - Strings: ~'Hello world!'~, ~"A"~, '42', etc.
+     - Numbers: ~1~, ~999~, ~7.35~, ~10e4~, etc.
+
+**** Operators
+     There are many operators but, like most things in programming, it would be a waste of time to learn them all.
+
+     Many of the fundamental operators will make sense (and you will remember) immediately and for less common operators and nuances of any operators, depend on [[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators][refference material]].
+     
+     There are assignment, comparison, arithmetic, bitwise, logical, and string operators
+
+     We'll just talk about a small selection that will be more than enough to get you going.
+
+     - Assignment
+       - As we've seen, when we want to give a value a name that we can refer to later, we assign it to a variable with the assignment operator ~=~
+       - any series of characters (not including punctuation except =_= and =$=) beginning with a non-numerical character is a valid variable name. There are some special language keywords that are also not allowed
+     - Arithmetic
+       - Most arithmetic operators are and work like what you would expect
+       - try putting any of the following in the REPL ~5 + 5~ , ~15 * 12~ , ~1 / 3~
+     - Comparison
+       - ~>~ , ~<~ , ~<=~ and ~>=~ (≤ and ≥ respectively) will return the boolean value of the comparison
+       - to check for equality, ~=~ will not work (since we use that for assignment). Instead use ~===~ ; ~==~ will also work but it’s a good habit to use the “strict” comparison with three ~=~ signs to avoid [[https://dorey.github.io/JavaScript-Equality-Table/][complexity]]
+     - Logical
+       - AND (~&&~) returns true if both of its operands are ~true~
+       - OR (~||~) returns true _either_ (or both) of its operands are ~true~
+       - NOT (~!~) returns the inverse boolean value of its operand. Any type can be provided to ~!~ and will be converted based on its [[https://developer.mozilla.org/en-US/docs/Glossary/Truthy][truthy]] or [[https://developer.mozilla.org/en-US/docs/Glossary/Falsy][falsy]] -ness
+     - String
+       - Comparison: we can use the comparison operators on strings. This may not always behave the way you expect; comparison is based on unicode values
+       - Concatination: the ~+~ operator allows us to concatinate two strings (stick the second onto the end of the first: ~"Hello " + "world"~)
+         - This demonstrates the overloading of ~+~
+
+*** More on Statements
+    We have already touched upon and will return later to _declaration statements_; these inform the runtime of variables we would like to associate values with so that we can refer to them later
+
+The next type 
+
+*** Composition & Abstraction
+    our primary tools in writing programs are composition and abstraction. Composition is the process of combining simple parts to build something more complex. Abstraction is giving a name to an idea in a way that we don't have to worry about the details.
+**** Composition
+     just like legos, using a few generic pieces, by putting together generic pieces, we can build something unique and specialized.
+*** The Function
+    our primary means of this is the Function. Functions are super cool.
 * Web Development (40 min)
 ** The Server and the Client
    when you go to a website, there are (simplified for conceptual perposes) two machines in play: the server and the client.
@@ -100,7 +183,7 @@
 ** Exercise
    Project Euler, Code Katas, etc
 ** Do It
-   Make something! Programming is more art than science and "art begins in imitation". Do something that interests you and your enthusiasm will be an asset
+   Make something! Programming is more art than science and art begins in imitation. Do something that interests you and your enthusiasm will be an asset
 * Q&A / Free code / John on a Soapbox (90 min)
 ** We write code to be read by people
    There are literally infinite ways to write code that will run and produce the right answer -- writing code that the next person intuitively understands is an art
